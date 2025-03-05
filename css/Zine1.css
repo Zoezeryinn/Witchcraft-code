@@ -1,0 +1,91 @@
+html, body {
+  min-height: 0;
+}
+
+
+/* General body styling */
+body {
+  background-color: white;
+  /* position: relative; */
+
+
+  /* background-image: url(/images/mainpage_images/background.png); */
+
+}
+html::after {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+
+  content: '';
+  background-size: 100% auto;
+  background-image: url(/images/mainpage_images/background.png);
+  background-attachment: fixed;
+
+  pointer-events: none;
+}
+
+header h1 {
+  font-size: 200pt;
+  font-family: "antiquarian-scribe", sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+* {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Styling for image containers */
+.image-container {
+  position: relative;
+  display: inline-block; /* Ensures the images are inline */
+  margin: 20px; /* Adds spacing between images */
+}
+
+/* Styling the images */
+.image-container img {
+  width: 450px;
+  height: auto;
+  display: block;
+}
+
+.homelink{
+  text-align: center;
+  font-size: 50px;
+  color: black;
+  font-family: "antiquarian-scribe", sans-serif;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.homelink:hover{
+  color: rgb(223, 21, 21);
+}
+
+.left{
+  display: block;
+  width: 40%;
+  /* float: left; */
+  position: relative;
+margin-top: 100px;
+margin-left: 20px;
+font-family: "antiquarian-scribe", sans-serif;
+font-size: 40px;
+}
+
+.right{
+  display: block;
+  /* float: right; */
+  width: 40%;
+  margin-top: 100px;
+  padding: 50px;
+  font-family: "antiquarian-scribe", sans-serif;
+  font-size: 40px;
+  margin-left: 50%;
+}

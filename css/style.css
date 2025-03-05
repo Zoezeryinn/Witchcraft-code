@@ -1,0 +1,64 @@
+* {
+  /* text-align: center; */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General body styling */
+body {
+  background-color: rgba(232, 232, 232, 0.944);
+}
+
+header h1 {
+  font-family: "antiquarian-scribe", sans-serif;
+  font-size: clamp(60pt, 15vw, 10px);
+  line-height: 1.3;
+
+  text-align: center;
+}
+
+
+
+/* Styling for image containers */
+.image-container {
+  position: relative;
+  display: inline-block; /* Ensures the images are inline */
+  margin: 20px; /* Adds spacing between images */
+}
+.image-container a {
+  cursor: inherit;
+}
+/* Styling the images */
+.image-container img {
+  width: 450px;
+  height: auto;
+  display: block;
+}
+
+/* Hover text styles */
+.hover-text {
+  margin-top: 10px; /* Adds spacing below the image */
+
+  font-family: "antiquarian-scribe", sans-serif;
+  font-size: 30pt;
+  color: rgb(223, 21, 21);
+  text-align: center;
+  
+  transition: opacity 0.3s ease; /* Smooth fade-in effect */
+
+  opacity: 0; /* Initially hidden */
+}
+
+/* Show text on hover */
+.image-container:hover .hover-text {
+  opacity: 1; /* Text becomes visible */
+}
+
+.bottom-text{
+  padding-inline: 5vw;
+  border-style: dotted;
+  text-align: justify;
+  font-family: "antiquarian-scribe", sans-serif;
+  font-size: 20px;
+}

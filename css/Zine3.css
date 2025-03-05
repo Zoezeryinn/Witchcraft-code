@@ -1,0 +1,60 @@
+/* General body styling */
+body {
+  background-color: white;
+}
+
+* {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.homelink{
+  text-align: center;
+  font-size: 50px;
+  color: black;
+  font-family: "antiquarian-scribe", sans-serif;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.homelink:hover{
+  color: rgb(223, 21, 21);
+}
+
+.center{
+ margin: auto;
+  display: block;
+  width: 55%;
+  margin-top: 60px;
+  font-family: "antiquarian-scribe", sans-serif;
+  font-size: 27.53px;
+}
+
+.subtext{
+  margin: auto;
+  display: block;
+  width: 90%;
+  margin-top: 150px;
+  font-family: "antiquarian-scribe", sans-serif;
+  font-size: 35px;
+
+}
+
+div {
+  shape-outside: ellipse(100px 200px at 50% 50%);
+  width: 300px;
+  height: 500px;
+  float: left;
+  opacity: .2;
+}
+
+.image { 
+  position: absolute;
+  translate: -50% -50%;
+  transition: scale .15s;
+  filter: invert(1);
+  mix-blend-mode: difference;
+}
