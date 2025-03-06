@@ -20,7 +20,7 @@ html::after {
 
   content: '';
   background-size: 100% auto;
-  background-image: url(/images/mainpage_images/background.png);
+  background-image: url(../images/mainpage_images/background.png);
   background-attachment: fixed;
 
   pointer-events: none;
